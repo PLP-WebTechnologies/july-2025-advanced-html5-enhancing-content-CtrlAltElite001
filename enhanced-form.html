@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web Page Showcase</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing Table</a></li>
+      <li><a href="#gallery">Media Gallery</a></li>
+      <li><a href="#signup">Sign Up Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Section 1: List -->
+    <section id="features">
+      <h2>Key Features</h2>
+      <ol>
+        <li>Semantic HTML5 structure</li>
+        <li>Accessible and responsive layout</li>
+        <li>Native form validation</li>
+        <li>Media integration (images and video)</li>
+      </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section id="pricing">
+      <h2>Pricing Plans</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price (Ksh)</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>Ksh 1,500/month</td>
+            <td>Access to basic features</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>Ksh 3,000/month</td>
+            <td>All basic features + priority support</td>
+          </tr>
+          <tr>
+            <td>Enterprise</td>
+            <td>Ksh 7,500/month</td>
+            <td>All features + custom solutions</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section id="gallery">
+      <h2>Media Gallery</h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/3184453/pexels-photo-3184453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400&w=600" 
+             alt="Team working on laptops - Pexels" 
+             width="400" height="250" />
+        <figcaption>Image: Team collaboration (via Pexels)</figcaption>
+      </figure>
+      <figure>
+        <video controls width="400">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Video: Demo Walkthrough</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section id="signup">
+      <h2>Sign Up Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required placeholder="example@email.com" /><br /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" required minlength="4" maxlength="15" placeholder="yourusername" /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password" /><br /><br />
+
+          <label for="confirm">Confirm Password:</label><br />
+          <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="Confirm password" /><br /><br />
+
+          <label for="role">Select Role:</label><br />
+          <select id="role" name="role" required>
+            <option value="">--Choose Role--</option>
+            <option value="user">User</option>
+            <option value="admin">Administrator</option>
+            <option value="moderator">Moderator</option>
+          </select><br /><br />
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            I agree to the terms and conditions
+          </label><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label for="website">Website:</label><br />
+          <input type="url" id="website" name="website" placeholder="https://example.com" /><br /><br />
+
+          <label for="readonly-example">Referral Code (read-only):</label><br />
+          <input type="text" id="readonly-example" name="referral" value="REF1234" readonly /><br /><br />
+
+          <label for="bio">Short Bio:</label><br />
+          <textarea id="bio" name="bio" rows="4" cols="40" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+        </fieldset>
+
+        <br />
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear Form" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Emmanuel Chemiat. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
